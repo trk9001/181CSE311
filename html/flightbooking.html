@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>Home | Katair Air</title>
+
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="icon" href="/favicon.ico">
+
+<header>
+    <h1>Katair Air</h1>
+    <hr>
+    <nav>
+        <a href="/html/index.html" class="">Home</a>⬥
+        <a href="#" class="active">Book a flight</a>⬥
+        <a href="#" class="">Flight query</a>⬥
+        <a href="#" class="">Log in</a>
+    </nav>
+    <hr>
+</header>
+
+<main>
+    <form class="bookflight" action="/flightbooking.py" method="post">
+        <fieldset>
+            <legend>Flight Information</legend>
+            <br>
+            <div class="flightclass">
+                <input type="radio" name="class" value="First" id="fclass">
+                <label for="fclass">First Class</label>
+                <input type="radio" name="class" value="Business" id="bclass">
+                <label for="bclass">Business Class</label>
+                <input type="radio" name="class" value="Economy" id="eclass">
+                <label for="eclass">Economy Class</label>
+            </div>
+            <br>
+            <div class="flightfromto">
+                <div class="flightfrom">
+                    <label for="from">From:</label>
+                    <select name="from" id="from">
+                        <option value="">Gulltown</option>
+                        <option value="">King's Landing</option>
+                        <option value="">Lannisport</option>
+                        <option value="">Oldtown</option>
+                        <option value="">White Harbor</option>
+                    </select>
+                </div>
+                <div class="flightto">
+                    <label for="to">To:</label>
+                    <select name="to" id="to">
+                        <option value="">Gulltown</option>
+                        <option value="">King's Landing</option>
+                        <option value="">Lannisport</option>
+                        <option value="">Oldtown</option>
+                        <option value="">White Harbor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flightdatetime">
+                <div class="flightdate">
+                    <label for="date">Date:</label>
+                    <input type="text" name="date" id="date" placeholder="yyyy-mm-dd">
+                </div>
+                <div class="flighttime">
+                    <label for="time">Time:</label>
+                    <select name="time" id="time">
+                        <option value="">Dawn</option>
+                        <option value="">Noon</option>
+                        <option value="">Twilight</option>
+                        <option value="">Dusk</option>
+                        <option value="">Night</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="passengername">
+                <div class="passengerfname">
+                    <label for="pfname">First Name:</label>
+                    <input type="text" name="pfname" id="pfname" size="25">
+                </div>
+                <div class="passengerlname">
+                    <label for="plname">Last Name:</label>
+                    <input type="text" name="plname" id="plname" size="25">
+                </div>
+            </div>
+            <div class="passengerid">
+                <label for="pid">Passport number:</label>
+                <input type="text" name="pid" id="pid" size="30">
+            </div>
+            <div class="passengeremail">
+                <label for="pemail">Email:</label>
+                <input type="email" name="pemail" id="pemail" size="30">
+            </div>
+            <div class="passengerpwd">
+                <label for="ppwd">Password:</label>
+                <input type="password" name="ppwd" id="ppwd" size="30">
+            </div>
+            <br>
+        </fieldset>
+        <fieldset class="buttons">
+            <button type="submit" name="flightformsubmit">Submit</button>
+            <button type="reset" name="flightformreset">Reset</button>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <hr>
+    <p><i>Created with ♥ for CSE311L</i></p>
+</footer>
