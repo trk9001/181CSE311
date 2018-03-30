@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    padding: 0 30px;
+    text-decoration: none;
+    width: 30px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+form.bookflight {
+    margin: 30px auto;
+}
+
+fieldset {
+    margin-bottom: 15px;
+}
+
+form.input {
+    width: auto;
+}
+
+select {
+    width: 600px;
+}
+
+footer p {
+    text-align: center;
+}
