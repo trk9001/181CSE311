@@ -1,7 +1,6 @@
-#! /usr/bin/env python
+#! /var/www/trk/venv/bin/python
 
 import cgitb
-import pymysql
 
 cgitb.enable()
 
