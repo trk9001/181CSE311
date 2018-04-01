@@ -6,18 +6,25 @@ import html
 import passlib
 import pymysql
 
+from templates.master import *
+
 cgitb.enable()
 
 print('Content-Type: text/html')
 print()
 
+print(head.format('Error'))
+print(header.format(nav_0))
+
 form = cgi.FieldStorage()
 
 if len(form) < 10:
-    print('len', len(form))
+    print(f'<p><strong>Error:</strong> Expected 10 values, received {len(form)}'
+    '.</p>\n')
 
 if form.getvalue('from') == form.getvalue('to'):
-    print('Zero displacement')
+    print('<p><strong>Error:</strong> Departure and destination points are '
+    'the same.</p>\n')
 
 fields = ['class',
           'from',
@@ -34,12 +41,5 @@ s = {}
 for x in fields:
     s[x] = form.getvalue(x)
 
-print(s)
-
-conn = pymysql.connect(
-    db='cse311db',
-    user='trk',
-    passwd='',
-    host='localhost',
-    cursorclass=pymysql.cursors.DictCursor
-)
+print('<p>' + html.escape(str(s)) + '</p>\n')
+print(footer)

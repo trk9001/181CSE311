@@ -27,3 +27,5 @@ print()
 #     c.execute('select * from test')
 #     for r in c.fetchall():
 #         print(r)
+#
+# conn.close()
