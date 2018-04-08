@@ -62,6 +62,8 @@ with conn.cursor() as c:
     c.execute('select max(id) from tickets')
     max_ticket_id = c.fetchone()['max(id)']
 
+    
+
 
 print('<p>' + html.escape(str(s)) + '</p>\n')
 print(footer)
