@@ -21,14 +21,14 @@ header = """<header>
 
 nav_0 = """<nav>
         <a href="/html/index.html" class="active">Home</a>⬥
-        <a href="/html/bookflight.html" class="">Book a flight</a>⬥
+        <a href="/html/flightbooking.html" class="">Book a flight</a>⬥
         <a href="#" class="">Flight query</a>⬥
         <a href="#" class="">Log in</a>
     </nav>"""
 
 nav_1 = """<nav>
         <a href="#" class="active">Home</a>⬥
-        <a href="/html/bookflight.html" class="">Book a flight</a>⬥
+        <a href="/html/flightbooking.html" class="">Book a flight</a>⬥
         <a href="#" class="">Flight query</a>⬥
         <a href="#" class="">Log in</a>
     </nav>"""
@@ -42,14 +42,14 @@ nav_2 = """<nav>
 
 nav_3 = """<nav>
         <a href="/html/index.html" class="active">Home</a>⬥
-        <a href="/html/bookflight.html" class="">Book a flight</a>⬥
+        <a href="/html/flightbooking.html" class="">Book a flight</a>⬥
         <a href="#" class="active">Flight query</a>⬥
         <a href="#" class="">Log in</a>
     </nav>"""
 
 nav_4 = """<nav>
         <a href="/html/index.html" class="active">Home</a>⬥
-        <a href="/html/bookflight.html" class="">Book a flight</a>⬥
+        <a href="/html/flightbooking.html" class="">Book a flight</a>⬥
         <a href="#" class="">Flight query</a>⬥
         <a href="#" class="active">Log in</a>
     </nav>"""
